@@ -3,17 +3,9 @@
 
 using namespace std;
 
-
 int main(){
 
-	vector<string> vtr;
-
-	
-
-
-	cout<<"Hello"<<endl;
-
-
+	vector<string> vtr(10);
 
 
 
