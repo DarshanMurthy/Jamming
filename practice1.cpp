@@ -1,19 +1,13 @@
 #include<iostream>
 #include<vector>
 
-
-
 using namespace std;
-
-
 
 int main(){
 
-	int term =10;
-	char a = (int)1;
+	vector <int> vtr;
 
 
-	cout<<a<<endl;
+	return 0;
 
-return 0;
 }
