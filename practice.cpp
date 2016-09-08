@@ -1,32 +1,15 @@
 #include<iostream>
+using namespace std;
 
-struct node{
-	int name;
-	char natrur[2] ={'T','F'};
-};
 
 
 int main(){
+	
+int arr[12][12] = {{12,23,78},{12,98,87},};
 
-	node Node;
-	cout<<Node.natrur[1]<<endl;
-
-
-	int value[12][12];
-
-	for(int i=0 ;i<12;i++){
-		for(int j=0;j<12;j++){
-			value[i][j] =i*j;
-		}
-	}
-
-	for(int i=0;i<12;i++){
-		for(int j=0;j<12;j++){
-			cout<< value[i][j]<<endl;
-		}
-	}
+cout<< arr[2][8] <<endl;
 
 
+return 0;
 
-	return 0;
 }
