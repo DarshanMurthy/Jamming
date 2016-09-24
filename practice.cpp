@@ -1,15 +1,21 @@
 #include<iostream>
-using namespace std;
+struct node{
+	int arr;
+	char name[2]={'T','F'};
+};
 
+struct test
+{
+	int arr[0];
 
+};
 
 int main(){
+
 	
-int arr[12][12] = {{12,23,78},{12,98,87},};
-
-cout<< arr[2][8] <<endl;
 
 
-return 0;
+
+	return 0;
 
 }
