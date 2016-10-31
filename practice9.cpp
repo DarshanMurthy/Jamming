@@ -11,13 +11,19 @@ struct Node{
 };
 
 void test_env(struct Node * node){
-	node->add=12;
+	node->add=10;
+	int sum =0;
+	for(int i=0;i<node->add;i++){
+		sum = sum + i;
+
+	}
+	cout<< sum<<endl ;
 	cout<< node->add;
 
 }
 
-void test_just(struct Node * node){
-
+void source(int i){
+	
 }
 
 int main(){
@@ -27,11 +33,15 @@ int main(){
 
 	Node * node;
 	node->add=10;
-	cout<< node->add;
+
 	test_env(node);
 
 	vector<int> vtr(10);
-	
+
+	for(int i=0;i<100;i++){
+		source(i);
+	}
+
 
 
 
