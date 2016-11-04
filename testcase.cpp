@@ -1,20 +1,25 @@
 #include<iostream>
-#include<algorithm>
-#include<string.h>
-#include<math.h>
-
-
+#include<vector>
 
 using namespace std;
+
+struct Node{
+	int data;
+	struct Node * llink;
+	struct Node * rrlink;
+};
+
 int main(){
 
-	double memo[1<<16];
-	int  data = 16;
-	int test = data<<2;
-	cout<<test;
+	Node * node;
+	node-> data =100;
+	cout<< node -> data;
+
+
+	typedef vector<int> vtr;
+	
 
 
 
 	return 0;
-
 }
