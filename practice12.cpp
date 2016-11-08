@@ -1,27 +1,18 @@
 #include<iostream>
 #include<vector>
-#define REP(i,a,b) for(int i = int(a);i<= int(b);i++)
 struct Node{
-	int add;
+	int data;
 	struct Node * llink;
 	struct Node * rlink;
 };
 
-using namespace std;
+Node * 
 
 
 int main(){
-	typedef long long ll;
-	typedef vector<int> vi;
-
-	
-
-	Node * test;
-	test->add=100;
-	cout<< test->add;
-
-
-
+	Node * node;
+	node -> data=100;
+	cout<< node-> data;
 
 
 
