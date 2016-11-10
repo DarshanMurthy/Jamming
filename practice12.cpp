@@ -1,20 +1,31 @@
 #include<iostream>
 #include<vector>
-struct Node{
-	int data;
-	struct Node * llink;
-	struct Node * rlink;
-};
 
-Node * 
 
+
+using namespace std;
+
+
+void vectertest(& vt){
+	
+}
 
 int main(){
-	Node * node;
-	node -> data=100;
-	cout<< node-> data;
+	pair<int, int> tem;
+	vector< int>  vt(100);
+	vt[0]=100;
 
 
+	vectertest(&vt);
+
+
+
+
+	int sum =0;
+	for(int i=0;i<10;i++){
+		sum+=i;
+	}
+	cout<< sum ;
 
 
 	return 0;
