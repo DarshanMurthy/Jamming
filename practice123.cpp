@@ -33,27 +33,27 @@ int main(){
 	node->data=100;
 	left->data=100;
 
-	cout << node->data + left->data;
 	
-
-
-
-
-
-
-
-
-
 	for(int i=0;i<4;i++){
 		for(int j=i+1;j<4;j++){
 
 			sum = add[i]+add[j];
-			cout<< sum <<endl;
+			
 			
 		}
 	}
 
-	cout<< sizeof(add);
+	int N=10,z,m;
+
+	for(z=0;z<N/2;z++){
+		for(m=z;m<N;m++){
+			cout<< z;
+			cout<< m;
+		}
+
+	}
+
+	
 
 
 
