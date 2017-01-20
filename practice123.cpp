@@ -44,11 +44,21 @@ int main(){
 	}
 
 	int N=10,z,m;
+	int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+	int value=0;
+
 
 	for(z=0;z<N/2;z++){
 		for(m=z;m<N;m++){
-			cout<< z;
-			cout<< m;
+			
+			
+			cout<< arr[z] <<" " << arr[m];
+
+			value = value + arr[z] + arr[m];
+
+
+			cout<<'\n';
+			
 		}
 
 	}
