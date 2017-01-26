@@ -1,20 +1,19 @@
 #include<iostream>
-
-
 using namespace std;
 
-struct Node{
-	int add;
-	struct Node * node;
 
+struct Node{
+	int data;
+	struct Node * rllink;
+	struct Node * llink;
 };
 
 
+
 int main(){
-	struct Node * node;
-	node->add =100;
 
-	cout<<"Hello";
-
+	Node * node;
+	
+	
 	return 0;
 }

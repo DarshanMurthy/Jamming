@@ -1,30 +1,20 @@
 #include<iostream>
 
-using namespace std;
 
+using namespace std;
 struct Node{
 	int data;
 	struct Node * llink;
-	struct Node * rrink;
+	struct Node * rrlink;
+
 };
 
-
-int test(struct Node * node){
-	node->data =100;
-	return node->data;
-
-}
-
 int main(){
+	Node * first= (Node *)malloc(sizeof(Node));
+	first->data=100;
+	cout<< first->data;
 
-	Node * node;
-	node->data =100;
-
-	cout<< node->data ;
-	int data = test(node);
-
-	cout<< data;
-
+	
 
 
 

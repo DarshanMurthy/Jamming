@@ -16,7 +16,13 @@
 #include <iostream>
 #include <algorithm>
 
+#define _CRT_SECURE_NO_DEPRECATE
 
+struct Node{
+	int data;
+	struct Node * llink;
+
+};
 using namespace std;
 
 int main(){
