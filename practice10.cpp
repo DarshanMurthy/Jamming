@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+
 
 
 using namespace std;
@@ -10,12 +12,34 @@ struct Node{
 };
 
 int main(){
+	int sum =0;
 	Node * first= (Node *)malloc(sizeof(Node));
 	first->data=100;
 	cout<< first->data;
 	Node * cur = (Node *) malloc(sizeof(Node));
 
 	int arrayInput[] = {1,2,3};
+	cout<< sizeof(int);
+	vector<int> value(100);
+	int len = sizeof(value);
+
+	cout<< sizeof(value);
+
+	for(int i=0;i<len;i++){
+
+		value[i]=i;
+		sum =sum + value[i];
+	}
+
+	cout<< sum;
+
+	vector<int> test(100);
+
+
+
+	
+
+
 
 
 
