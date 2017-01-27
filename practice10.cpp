@@ -13,6 +13,11 @@ int main(){
 	Node * first= (Node *)malloc(sizeof(Node));
 	first->data=100;
 	cout<< first->data;
+	Node * cur = (Node *) malloc(sizeof(Node));
+
+	int arrayInput[] = {1,2,3};
+
+
 
 	
 
