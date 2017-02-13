@@ -8,12 +8,13 @@ struct Node{
 	struct Node * llink;
 };
 
-
-
 int main(){
 
 	Node * node;
+	cout << "Hello world";
+
 	
+
 	
 	return 0;
 }

@@ -1,5 +1,8 @@
 #include<iostream>
 #include<vector>
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 using namespace std;
 
 struct Node{
@@ -19,14 +22,28 @@ struct NodeTest{
 
 
 
+
 int main(){
+  int value[3] ={10,2,3};
+  
+  
 	vector<int> vtr(100);
 	vector<int> vtr1(10);
 	pair<int,int> ints(10,10);
+	vtr[10] =10;
+	string []name= "Darshan";
+	cout<< strlen(name);
 
-	NodeTest * test;
+       
+
+      
+	
+
+	Nodetest * test;
 	test = (NodeTest * ) malloc(sizeof(NodeTest));
 	cout<< test->data;
+
+	
 	// test->data=100;
 	// cout<< test->data;
 

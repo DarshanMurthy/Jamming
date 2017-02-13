@@ -11,6 +11,14 @@ struct Node{
 
 };
 
+
+struct Nodetest{
+  int data;
+  struct Nodetest * llink;
+  struct Nodetest * rllink;
+  
+};
+
 int main(){
 	int sum =0;
 	Node * first= (Node *)malloc(sizeof(Node));
@@ -29,21 +37,11 @@ int main(){
 
 		value[i]=i;
 		sum =sum + value[i];
-	}
+			}
 
 	cout<< sum;
 
 	vector<int> test(100);
-
-
-
-	
-
-
-
-
-
-	
 
 
 

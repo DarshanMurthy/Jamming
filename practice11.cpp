@@ -7,6 +7,9 @@ struct Node{
 
 };
 
+
+
+
 Node * creator(){
 	Node * node = (Node *)malloc(sizeof(Node));
 	return node;
@@ -21,9 +24,13 @@ void insert(Node * head, int data){
 	cur->data= data;
 }
 
+void sum(int value){
+  cout<< value;
+}
 
 
 int main(){
+  sum(10);
 	Node * head;
 	insert(head,10);
 
