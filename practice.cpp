@@ -1,49 +1,40 @@
 #include<iostream>
-using namespace std;
-void permute(char * str, int first, int last);
+#include<vector>
 
 struct Node{
   int data;
   struct Node * llink;
-  struct Node * rrlink;
+  struct Node * rlink;
 };
 
-void swap(char * str1, char * str2)
-{
-  char  * temp;
-  temp = str1;
-  str1 = str2;
-  str2 = temp;
+
+using namespace std;
+
+
+void swap(char * name1, char * name2){
+  char * temp;
+  temp= name1;
+  name1=name2;
+  name2=temp; 
 }
 
-
-void permute(char * str, int first, int last){
-
-  if(first == last){
-    cout<< str;
-
+void temp(char * name, int start,int end){
+  for(int i=0;i<end;i++){
+    swap(name+i,name+ start);
   }
-  else {
-  for(int first=0;first<last-1;first++){
-
-    swap(str+first, str+last);
-    permute(str, str+first, str+last);
   
-
-  }
-  }
 }
 
 
 int main(){
-  char name[] = "darshan";
-  cout<< name;
-
-  int len = strlen(name);
-  permute(name,0,len-1);
-
-
+  char * name="darshamurthy";
+  int end = strlen(name);
+  temp(name,0,end);
+  
+  vector<int> vtr(10);
+  struct Node * node;
+  int arr[] = {102,23};
+  int len = sizeof(arr);
+  cout<<len <<endl;
   return 0;
-
 }
-
