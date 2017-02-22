@@ -1,72 +1,35 @@
 #include<iostream>
-#include<vector>
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-using namespace std;
 
 struct Node{
-	int data;
-	Node * llink;
-	Node * rlink;
-
+  int data;
+  struct Node * llink;
+  struct Node * rlink;
 };
 
-struct NodeTest{
-	int data;
-	NodeTest * node;
-	NodeTest * node_test;
+using namespace std;
 
-};
-
-
-
+void swap(char * name1, char * name2){
+  char temp;
+  temp= *name1;
+  *name1=*name2;
+  *name2=temp;
+}
 
 
 int main(){
-  int value[3] ={10,2,3};
+  Node * node= (Node *) malloc(sizeof(Node));
+  node->data =100;
+
+  char name[] = "darshan";
+  char name1[] = "divya";
+  cout<< name<<endl;
   
+
   
-	vector<int> vtr(100);
-	vector<int> vtr1(10);
-	pair<int,int> ints(10,10);
-	vtr[10] =10;
-	string []name= "Darshan";
-	cout<< strlen(name);
-
-       
-
-      
-	
-
-	Nodetest * test;
-	test = (NodeTest * ) malloc(sizeof(NodeTest));
-	cout<< test->data;
-
-	
-	// test->data=100;
-	// cout<< test->data;
-
-
-	// for(int i=0;i<10 ;i++ ){
-	// 	vtr[i] = i*i;
-	// 	cout<< vtr[i];
-	// }
-
-	// for(int j=0;j<10;j++){
-	// 	//vtr1[j] = j*j;
-	// 	//vtr1.push_back(i);
-	// 	//vtr1.push_back[i];
-	// }
+  swap(name,name1);
+  cout<< name <<endl;
 
 
 
-
-
-
-
-	return 0;
-	
-
-
+  return 0;
 }
