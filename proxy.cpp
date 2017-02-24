@@ -13,14 +13,19 @@ struct NodeList{
 
 };
 int main(){
-	char nameslist[2][2]= {{'a','b'},{'b','a'}};
-	int len=10;
+  char *f ="darshan";
+  char x[]={"dars"};
+  char nameslist[3][2]= {{'a','b'},{'b','a'},{'j','s'}};
+  char t[2]={'t','m'};
+  char temp[] ={'m','b'};
+  char name[]={'c','h'};
+  cout<< name<<endl;
+  cout<< temp<<endl;
+
+  
+
+  
 
 
-
-	cout<< len;
-
-
-
-	return 0;
+  return 0;
 }
