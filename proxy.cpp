@@ -1,29 +1,22 @@
 #include<iostream>
-using namespace std;
-
 struct Node{
-	int data;
-	struct Node * llink;
+  int data;
+  struct Node * llink;
+  struct Node * rlink;
 };
 
 
-struct NodeList{
-	int data;
-	struct NodeList * llink;
+void testNode(int * ptr){
 
-};
+}
+
+
+
 int main(){
-  char *f ="darshan";
-  char x[]={"dars"};
-  char nameslist[3][2]= {{'a','b'},{'b','a'},{'j','s'}};
-  char t[2]={'t','m'};
-  char temp[] ={'m','b'};
-  char name[]={'c','h'};
-  cout<< name<<endl;
-  cout<< temp<<endl;
-
+  struct Node * node = (Node *) malloc(sizeof(Node));
+  node-> data=10;
+  char * nametest="darshan";
   
-
   
 
 
