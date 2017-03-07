@@ -1,20 +1,24 @@
 #include<iostream>
-using namespace std;
-
 
 struct Node{
-	int data;
-	struct Node * rllink;
-	struct Node * llink;
+  int data;
+  char * name;
 };
 
+using namespace std;
+
+void swap(char **name1, char **name2){
+ 
+ 
+}
+
 int main(){
+  char * name1="darshan";
+  char * name2="murthy";
 
-	Node * node;
-	cout << "Hello world";
+  swap(&name1, &name2);
+  cout<< name1 <<endl;
 
-	
 
-	
-	return 0;
+  return 0;
 }

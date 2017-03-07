@@ -1,34 +1,25 @@
 #include<iostream>
-#include<vector>
+
+
+struct Node{
+  int data;
+  struct Node * llink;
+  struct Node * rlink;
+};
 
 
 using namespace std;
 
 
+void swap(char ** name1, char **name2){
+  cout<< *name1;
 
-
+}
 int main(){
-	
+  char * name1="darshan";
+  char * name2="diviay";
 
-
-
-
-	vector<int> vtr(100);
-	for(int i=0;i<10;i++){
-		vtr[i] = (i+2)*(i+2);
-	}
-
-
-	cout<< vtr.empty() <<endl;
-	if(vtr.empty()){
-		cout << "in" <<endl;
-	}
-	cout << "out" <<endl;
-
-	vector<string> vtrtest;
-	
-
-
-
-	return 0;
+  swap(&name1, &name2);
+ 
+  return 0;
 }

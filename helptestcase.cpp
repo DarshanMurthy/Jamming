@@ -1,4 +1,5 @@
 #include<iostream>
+
 struct Node{
   int data;
   struct Node * llink;
@@ -7,16 +8,14 @@ struct Node{
 
 using namespace std;
 
-int main(){
-  Node * first = (Node *) malloc(sizeof(Node));
-  first->data=100;
-  first->llink='\0';
-  
-  char * name="darshanmurthy";
-  cout<< strlen(name)<<endl;
-  cout<< sizeof(name)<<endl;
+  int main(){
+    struct Node * node = (Node *) malloc(sizeof(Node));
+    int arr [] = {10,2,3,4};
+    char *  name ="darshan";
 
-  char name1[]="darshanmurthy";
-  cout<< sizeof(name1) << endl;
-  cout<< strlen(name1) <<endl;
-}
+  
+      char temp ='c';
+      cout<< temp <<endl;
+
+    return 0;
+  }
