@@ -1,23 +1,25 @@
 #include<iostream>
 
+
 struct Node{
   int data;
-  char * name;
+  struct Node * llink;
+  struct Node * rlink;
 };
+
 
 using namespace std;
 
-void swap(char **name1, char **name2){
- 
- 
-}
 
-int main(){
-  char * name1="darshan";
-  char * name2="murthy";
-
-  swap(&name1, &name2);
-  cout<< name1 <<endl;
+int main() {
+  int arr[3][3] ={{10,2,3},
+		  {12,3,4},
+		  {1,2,3}};
+  
+ 
+  for(int i=0;i<3;i++){
+    cout << arr[i][i]<<endl;
+  }
 
 
   return 0;
