@@ -13,20 +13,40 @@ void swap(int & i, int & j){
 
 
 void rotateMatrix(int matrix[N][N]){
-  for(int i=0;i< N/2;i++){
-    for(int j=0;j<2;j++){
-      swap(matrix[i][j], matrix[i][j]);
+  
+      swap(matrix[0][0], matrix[1][1]);
 
-    }
+    
   }
 
 
+void initializeMatrix(int matrix[N][N]){
+   for(int i=0;i<N;i++){
+    for(int j=0;j< N;j++){
+      cout << matrix[i][j]<<' ';
+    }
+    cout << endl;
+  }
+}
+
+void printMatrix(int matrix[N][N]){
+  for(int i=0;i<N;i++){
+    for(int j=0;j< N;j++){
+      cout << matrix[i][j]<<' ';
+    }
+    cout << endl;
+  }
 }
 
 
 int main(){
   int matrix[N][N]={{1,2},{11,4}};
+  
+ 
+
+  initializeMatrix(matrix);
   rotateMatrix(matrix);
+  printMatrix(matrix);
 
 
   return 0;
