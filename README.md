@@ -1,2 +1,0 @@
-# Jamming
-Practice! Hard :)
