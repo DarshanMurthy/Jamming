@@ -13,9 +13,10 @@ void swap(int & i, int & j){
 
 
 void rotateMatrix(int matrix[N][N]){
-  
-      swap(matrix[0][0], matrix[1][1]);
 
+  for(int i=0;i< N/2;i++){
+    swap(matrix[0][0], matrix[1][1]);
+  }
     
   }
 
