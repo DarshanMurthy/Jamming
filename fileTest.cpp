@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 
+
 using namespace std;
 
 void vectorTest(vector<int> &vtr){
@@ -11,6 +12,8 @@ void vectorTest(vector<int> &vtr){
 
 int main(){
   vector<int> vt = {1,23,0};
+  int arr[] = {10,2,3};
+  
   vectorTest(vt);
   for(int i=0;i<3;i++){
     cout << vt[i]<<endl;
