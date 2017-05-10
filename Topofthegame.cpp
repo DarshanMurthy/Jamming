@@ -9,6 +9,11 @@ struct Node{
 using namespace std;
 
 int main(){
+  typedef char * string;
+
+
+  
+  
   struct Node * node = (Node *) malloc(sizeof(Node));
   node->data=10;
   int one;
