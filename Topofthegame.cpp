@@ -1,33 +1,37 @@
 #include<iostream>
+#include<vector>
+using namespace std;
 
 struct Node{
   int data;
-  struct Node * llink;
   struct Node * rlink;
+  struct Node * llink;
 };
 
-using namespace std;
-
 int main(){
-  typedef char * string;
-
-
-  
-  
   struct Node * node = (Node *) malloc(sizeof(Node));
-  node->data=10;
-  int one;
-  for (int i=0;i< 10;i++){
-     one = 1 << i ;
-     cout << one << endl;
-     
-  }
- 
+  vector<int> li = {10,2,3};
+  //node-> data =10;
 
-  int data=10;
-  int val = data << 2 ;
-  cout << val <<endl;
+  for(int i=0;i<3;i++){
+    //cout << li[i] << endl;
+  }
+
+
+
+  int matrix[2][2] ={{10,2},{9,2}};
+
+  for(int i=0;i<2;i++){
+    for(int j=0;j<2;j++){
+
+      cout << matrix[i][j]<<' ';
+    }
+    cout <<'\n' <<endl;
+  }
+
   
 
-  return 0;
+
+  
+
 }
