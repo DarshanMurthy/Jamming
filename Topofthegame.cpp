@@ -1,37 +1,27 @@
 #include<iostream>
-#include<vector>
 using namespace std;
 
 struct Node{
   int data;
-  struct Node * rlink;
   struct Node * llink;
+  struct Node * rlink;
 };
 
+void swap(char ** name1, char ** name2){
+  cout << *name1 <<endl;
+  
+  char * temp = *name1;
+  
+
+}
+
 int main(){
-  struct Node * node = (Node *) malloc(sizeof(Node));
-  vector<int> li = {10,2,3};
-  //node-> data =10;
+  char * name1= "Darshan";
+  char * name2 ="Murthy";
 
-  for(int i=0;i<3;i++){
-    //cout << li[i] << endl;
-  }
+  swap(&name1, &name2);
 
 
-
-  int matrix[2][2] ={{10,2},{9,2}};
-
-  for(int i=0;i<2;i++){
-    for(int j=0;j<2;j++){
-
-      cout << matrix[i][j]<<' ';
-    }
-    cout <<'\n' <<endl;
-  }
-
-  
-
-
-  
+  return 0;
 
 }
