@@ -16,6 +16,7 @@ void permute(char * a, int l, int h){
   for(int i=0;i<h;i++){
 
     swap(a+l,a+i);
+    permute(a,
       
   }
 
