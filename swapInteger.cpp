@@ -1,18 +1,44 @@
 #include<iostream>
+using namespace std;
 
-void swap(int * value1, int * value2){
-    int temp = * value1;
-    * value1 = * value2;
-    * value2 = temp; 
+void swap(int *a, int *b){
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b =temp;
+}
+
+void swapChar(char * a, char *b){
+    char temp;
+    temp= *a;
+    *a = *b;
+    *b= temp;
+}
+swapTemp(char * a, char *b){
+    char temp[];
+    temp= *a;
+    *a = *b;
+    *b= temp;
 
 }
 
 int main(){
-    int value1=10,value2=20;
-    swap(&value1, &value2);
+    int a=10, b=20;
+    swap(&a, &b);
+    cout << a << endl;
+    char c='a', d='n';
+    swapChar(&c,&d);
+    cout << c << endl;
 
-    int value[]={10,2,3};
+    char temp1[] ="darshan";
+    char temp2[]="murthy";
+    swapTemp(&temp1, &temp2);
+    cout<< temp1 << endl;
 
 
-    return 0;
+
+
+
+
+
 }
